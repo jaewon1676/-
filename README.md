@@ -1,1 +1,0 @@
-# beakjoon_python
