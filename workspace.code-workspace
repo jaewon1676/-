@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "..\\dev"
+		},
+		{
+			"name": "beakjoon_python",
+			"path": "..\\dev\\beakjoon_python"
+		}
+	],
+	"settings": {}
+}
