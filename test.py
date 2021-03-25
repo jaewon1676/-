@@ -1,4 +1,5 @@
-a = [1.2, 2.5, 3.7, 4.6]
+sum = 0
+for i in range(1,20):
+    sum += i
 
-for i in range(len(a)):
-    a[i]=int(a[i])
+print(sum)
