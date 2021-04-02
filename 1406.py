@@ -5,17 +5,17 @@
 import sys
 input = sys.stdin.readline
 s1 = list(input().strip()) # 문자열 입력, strip()으로 문자열 조합 제거
-s2 = []                    # 스택2
+s2 = []                    # 
 m = int(input())           # 입력 할 명령어 개수
 
 for i in range(m):         # m만큼 입력받는다
     com = input().strip() 
     if com[0] == "P":
-        s1.append(com[2])    # com[1]은 띄어쓰기니까 com[2] append
+        s1.append(com[2])    # com[1]은 띄어쓰기니까 com[2]을 s1에 추가
     elif com[0] == "L" and s1 != []:
         s2.append(s1.pop())  # s1에서 pop 하고 s2로 옮김
     elif com[0] == "D" and s2 != []:
         s1.append(s2.pop())  # s2에서 pop 하고 s1로 옮김
     elif com[0] == "B" and s1 != []:
         s1.pop()
-print("".join(s1 + list(reversed(s2))))
+print("".join(s1 + list(reversed(s2)))) # s1과 reverse s2를 붙힘
