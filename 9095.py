@@ -8,7 +8,7 @@ n = int(input())               # 정수 n 입력
 for i in range(n):
     input_list.append(int(input()))        
 
-dp = [1, 2, 4]   # 타일 초기화 및 생성
+dp = [1, 2, 4]   # 타일 초기화 및 생성.
 
 for i in range(3, max(input_list)):
     dp.append(dp[i-1]+dp[i-2]+dp[i-3])
