@@ -1,0 +1,16 @@
+# 2609 최대공약수와 최소공배수
+# 수학
+import sys
+
+A, B = map(int, sys.stdin.readline().split())
+a, b = A, B
+
+while b != 0:
+    a = a % b
+    a, b = b, a
+
+print(a)
+
+print(A*B//a)
+
+
