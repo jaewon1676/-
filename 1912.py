@@ -1,5 +1,5 @@
 # 백준 1912 연속합
-# DP
+# DP.
 import sys
 input = sys.stdin.readline
 
