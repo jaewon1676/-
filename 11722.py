@@ -8,7 +8,7 @@ a = list(map(int, input().split()))
 
 for i in range(n):
     for j in range(i):
-        if a[i] < a[j]:
+        if a[i] < a[j]: # 오른쪽보다 왼쪽이 크면 +1 
             dp[i] = max(dp[i], dp[j] + 1)
 print(max(dp))
 
