@@ -1,5 +1,8 @@
-sum = 0
-for i in range(1,20):
-    sum += i
+import sys
+input = sys.stdin.readline
+n = int(input())
 
-print(sum)
+dp = []
+
+for i in range(n):
+    dp.append(list(map(int, input().split())))
